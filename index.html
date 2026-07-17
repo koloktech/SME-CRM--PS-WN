@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="app-shell">
-      <aside class="sidebar" id="sidebar">
+      <aside class="sidebar" id="sidebar" aria-label="Main menu">
         <a class="brand" href="#dashboard" aria-label="Wan Boutique home">
           <span class="brand-mark">WB</span><span>WAN<br />BOUTIQUE</span>
         </a>
@@ -29,9 +29,10 @@
         </nav>
         <div class="sidebar-foot">Personal-shopping order manager<br /><span id="connection-state">Demo mode</span></div>
       </aside>
+            <button class="sidebar-backdrop" id="sidebar-backdrop" aria-label="Close menu" tabindex="-1"></button>
       <main class="main-content">
         <header class="topbar">
-          <button class="icon-button mobile-menu" id="menu-button" aria-label="Open menu">☰</button>
+          <button class="icon-button mobile-menu" id="menu-button" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false">☰</button>
           <div>
             <p class="eyebrow" id="page-kicker">ORDER MANAGEMENT</p>
             <h1 id="page-title">Dashboard</h1>

@@ -24,3 +24,12 @@ button, input, select, textarea { touch-action: manipulation; }
   .toast-region { right: 12px; left: 12px; bottom: 12px; }
   .toast { text-align: center; }
 }
+.sidebar-backdrop { display: none; }
+@media (max-width: 760px) {
+  body.drawer-open { overflow: hidden; }
+  .sidebar { visibility: hidden; pointer-events: none; box-shadow: 14px 0 34px rgba(27, 12, 19, .3); }
+  .sidebar.open { visibility: visible; pointer-events: auto; }
+  .sidebar-backdrop { display: block; position: fixed; inset: 0; z-index: 70; opacity: 0; pointer-events: none; border: 0; background: rgba(28, 14, 21, .45); transition: opacity .2s ease; }
+  .sidebar-backdrop.open { opacity: 1; pointer-events: auto; }
+  .mobile-menu { min-width: 44px; min-height: 44px; border-radius: 8px; }
+}
