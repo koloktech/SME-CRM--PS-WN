@@ -1,8 +1,8 @@
-# Deployment guide — Wan Boutique Order Manager
+# Deployment guide — PS Personal Shopper Order Manager
 
 ## Part 1: Prepare Google Sheets
 
-1. In Google Drive, create a new blank Google Sheet named `Wan Boutique CRM`.
+1. In Google Drive, create a new blank Google Sheet named `PS Personal Shopper CRM`.
 2. Open **Extensions → Apps Script**.
 3. Replace the default `Code.gs` content with [`google-appscript/Code.gs`](google-appscript/Code.gs).
 4. In Apps Script, open **Project Settings** and set the timezone to `Asia/Kuala_Lumpur` if it is not already selected.

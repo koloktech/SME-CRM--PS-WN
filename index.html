@@ -3,36 +3,37 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#8f3054" />    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#8f3054" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <link rel="apple-touch-icon" href="assets/icon.svg" />
-    <meta name="description" content="Wan Boutique personal-shopping order manager" />
+    <meta name="description" content="PS Personal Shopper order manager" />
     <link rel="manifest" href="manifest.json" />
     <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Wan Boutique | Order Manager</title>
+    <link rel="stylesheet" href="styles.css?v=4" />
+    <title>PS Personal Shopper | Order Manager</title>
   </head>
   <body>
-    <div class="app-shell">
+    <div class="app-shell" id="app-shell">
       <aside class="sidebar" id="sidebar" aria-label="Main menu">
-        <a class="brand" href="#dashboard" aria-label="Wan Boutique home">
-          <span class="brand-mark">WB</span><span>WAN<br />BOUTIQUE</span>
-        </a>
+        <button class="brand" id="sidebar-toggle" type="button" aria-label="Collapse sidebar" aria-expanded="true">
+          <span class="brand-mark">PS</span><span class="brand-name">PS PERSONAL<br />SHOPPER</span>
+        </button>
         <nav class="nav" aria-label="Main navigation">
-          <a href="#dashboard" data-route="dashboard">Dashboard</a>
-          <a href="#new-order" data-route="new-order">New order</a>
-          <a href="#orders" data-route="orders">Orders</a>
-          <a href="#customers" data-route="customers">Customers</a>
-          <a href="#payments" data-route="payments">Payments</a>
-          <a href="#settings" data-route="settings">Settings</a>
+          <a href="#dashboard" data-route="dashboard"><span class="nav-icon" aria-hidden="true">⌂</span><span class="nav-label">Dashboard</span></a>
+          <a href="#new-order" data-route="new-order"><span class="nav-icon" aria-hidden="true">＋</span><span class="nav-label">New order</span></a>
+          <a href="#orders" data-route="orders"><span class="nav-icon" aria-hidden="true">≡</span><span class="nav-label">Orders</span></a>
+          <a href="#customers" data-route="customers"><span class="nav-icon" aria-hidden="true">●</span><span class="nav-label">Customers</span></a>
+          <a href="#payments" data-route="payments"><span class="nav-icon nav-icon-text" aria-hidden="true">RM</span><span class="nav-label">Payments</span></a>
+          <a href="#settings" data-route="settings"><span class="nav-icon" aria-hidden="true">⚙</span><span class="nav-label">Settings</span></a>
         </nav>
         <div class="sidebar-foot">Personal-shopping order manager<br /><span id="connection-state">Demo mode</span></div>
       </aside>
-            <button class="sidebar-backdrop" id="sidebar-backdrop" aria-label="Close menu" tabindex="-1"></button>
+      <button class="sidebar-backdrop" id="sidebar-backdrop" aria-label="Close menu" tabindex="-1"></button>
       <main class="main-content">
         <header class="topbar">
-          <button class="icon-button mobile-menu" id="menu-button" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false">☰</button>
+          <button class="icon-button mobile-menu" id="menu-button" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false">&#9776;</button>
           <div>
             <p class="eyebrow" id="page-kicker">ORDER MANAGEMENT</p>
             <h1 id="page-title">Dashboard</h1>
@@ -44,6 +45,6 @@
     </div>
     <div id="toast-region" class="toast-region" aria-live="polite"></div>
     <div id="modal-root"></div>
-    <script src="app.js" defer></script>
+    <script src="app.js?v=4" defer></script>
   </body>
 </html>

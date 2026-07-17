@@ -1,4 +1,4 @@
-# Wan Boutique Order Manager
+# PS Personal Shopper Order Manager
 
 This is a vanilla HTML, CSS and JavaScript PWA for a personal-shopping business. It supports manual orders, WhatsApp-message parsing, manually entered item cost/service fees, payments, customer history, printing invoices, and Google Sheets through Apps Script.
 

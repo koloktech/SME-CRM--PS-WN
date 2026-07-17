@@ -1,5 +1,5 @@
 /**
- * Wan Boutique Order Manager API
+ * PS Personal Shopper Order Manager API
  *
  * 1. Paste this file into Apps Script attached to the target Google Sheet.
  * 2. Run setupDatabase() once and authorize it.
@@ -76,7 +76,7 @@ function setupDatabase() {
   const settings = getRows_(SHEETS.SETTINGS);
   if (!settings.length) {
     appendRows_(SHEETS.SETTINGS, [
-      ['BUSINESS_NAME', 'Wan Boutique', 'Displayed on invoices'],
+      ['BUSINESS_NAME', 'PS Personal Shopper', 'Displayed on invoices'],
       ['INVOICE_PREFIX', 'WB', 'Prefix for generated invoice numbers'],
       ['DEFAULT_CURRENCY', 'RM', 'Display currency'],
       ['SCHEMA_VERSION', '1', 'Do not edit'],
