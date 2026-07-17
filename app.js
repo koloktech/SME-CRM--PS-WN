@@ -1,5 +1,5 @@
 /* PS Personal Shopper Order Manager — no framework required. Configure API_URL after Apps Script deployment. */
-const CONFIG = { API_URL: '', API_TOKEN: '', BUSINESS_NAME: 'PS Personal Shopper', CURRENCY: 'RM' };
+const CONFIG = { API_URL: 'https://script.google.com/macros/s/AKfycbzmzxcw9m6VXSnq8BHtE5M18OEplkuYrQN18mt1zC_LFKQ-6R-zwAQfvlgp13YTHq7w/exec', API_TOKEN: '', BUSINESS_NAME: 'PS Personal Shopper', CURRENCY: 'RM' };
 const STORAGE_KEY = 'wan-boutique-demo-v1';
 const state = { route: 'dashboard', data: { orders: [], items: [], payments: [], customers: [], settings: {} }, draft: null, loading: false };
 const $ = (selector, scope = document) => scope.querySelector(selector);
