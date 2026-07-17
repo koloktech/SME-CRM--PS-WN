@@ -1,0 +1,9 @@
+{
+  "name": "Wan Boutique Order Manager",
+  "short_name": "Wan Boutique",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fbf9f9",
+  "theme_color": "#8f3054",
+  "icons": [{"src":"assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
